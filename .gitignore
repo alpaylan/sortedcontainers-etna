@@ -26,7 +26,6 @@
 etna/.venv/
 etna/.hypothesis/
 etna/.pytest_cache/
-etna/uv.lock
 etna/etna_runner.egg-info/
 .hegel/
 progress.jsonl
@@ -38,3 +37,5 @@ etna.log
 /uv.lock
 /etna/.venv
 __pycache__/
+/etna/etna.log
+/etna/.hypothesis
