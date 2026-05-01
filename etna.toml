@@ -1,6 +1,7 @@
 name = "sortedcontainers"
 description = "Pure-Python sorted collections (SortedList, SortedDict, SortedSet) — bug fixes mined from upstream history."
 language = "python"
+strategies = ["hypothesis", "crosshair"]
 crate = "sortedcontainers"
 base_commit = "3ac358631f58c1347f1d6d2d92784117db0f38ed"
 
