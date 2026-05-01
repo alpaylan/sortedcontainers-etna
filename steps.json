@@ -1,0 +1,35 @@
+{
+  "setup_steps": [
+    {
+      "Command": {
+        "command": "bash",
+        "args": [
+          "-c",
+          "cd etna && uv sync"
+        ]
+      }
+    }
+  ],
+  "build_steps": [],
+  "capabilities": {
+    "solve": [
+      {
+        "Command": {
+          "command": "uv",
+          "args": [
+            "run",
+            "etna-runner",
+            "${strategy}",
+            "${property}"
+          ],
+          "run_at": "${workload_path}/etna",
+          "params": [
+            "workload_path",
+            "property",
+            "strategy"
+          ]
+        }
+      }
+    ]
+  }
+}

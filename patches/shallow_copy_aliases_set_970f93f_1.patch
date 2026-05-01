@@ -1,0 +1,16 @@
+diff --git a/src/sortedcontainers/sortedset.py b/src/sortedcontainers/sortedset.py
+index f2416bf..bbcd48b 100644
+--- a/src/sortedcontainers/sortedset.py
++++ b/src/sortedcontainers/sortedset.py
+@@ -356,7 +356,10 @@ class SortedSet(MutableSet, Sequence):
+         :return: new sorted set
+ 
+         """
+-        return self._fromset(set(self._set), key=self._key)
++        new_set = SortedSet(key=self._key)
++        new_set._set = self._set
++        new_set._list = self._list
++        return new_set
+ 
+     __copy__ = copy
+ 

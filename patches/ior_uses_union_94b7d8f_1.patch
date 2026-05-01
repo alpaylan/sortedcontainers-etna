@@ -1,0 +1,13 @@
+diff --git a/src/sortedcontainers/sortedset.py b/src/sortedcontainers/sortedset.py
+index f2416bf..3efe674 100644
+--- a/src/sortedcontainers/sortedset.py
++++ b/src/sortedcontainers/sortedset.py
+@@ -656,7 +656,7 @@ class SortedSet(MutableSet, Sequence):
+                 _add(value)
+         return self
+ 
+-    __ior__ = update
++    __ior__ = union
+     _update = update
+ 
+     def __reduce__(self):

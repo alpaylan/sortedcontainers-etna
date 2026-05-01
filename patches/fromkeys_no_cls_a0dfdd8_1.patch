@@ -1,0 +1,13 @@
+diff --git a/src/sortedcontainers/sorteddict.py b/src/sortedcontainers/sorteddict.py
+index 273c9ce..7c3bb15 100644
+--- a/src/sortedcontainers/sorteddict.py
++++ b/src/sortedcontainers/sorteddict.py
+@@ -316,7 +316,7 @@ class SortedDict(dict):
+         :return: new sorted dict
+ 
+         """
+-        return cls((key, value) for key in iterable)
++        return SortedDict((key, value) for key in iterable)
+ 
+     def keys(self):
+         """Return new sorted keys view of the sorted dict's keys.

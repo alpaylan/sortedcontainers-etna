@@ -1,0 +1,17 @@
+diff --git a/src/sortedcontainers/sorteddict.py b/src/sortedcontainers/sorteddict.py
+index 273c9ce..c90a5f6 100644
+--- a/src/sortedcontainers/sorteddict.py
++++ b/src/sortedcontainers/sorteddict.py
+@@ -300,7 +300,11 @@ class SortedDict(dict):
+         :return: new sorted dict
+ 
+         """
+-        return self.__class__(self._key, self.items())
++        new_dict = self.__class__(self._key)
++        new_dict._list = self._list
++        for key, value in self.items():
++            dict.__setitem__(new_dict, key, value)
++        return new_dict
+ 
+     __copy__ = copy
+ 

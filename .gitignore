@@ -21,3 +21,20 @@
 
 # macOS metadata
 .DS_Store
+
+# ETNA workload runtime artifacts
+etna/.venv/
+etna/.hypothesis/
+etna/.pytest_cache/
+etna/uv.lock
+etna/etna_runner.egg-info/
+.hegel/
+progress.jsonl
+etna.log
+/.hegel
+/etna.log
+/progress.jsonl
+/.marauders
+/uv.lock
+/etna/.venv
+__pycache__/

@@ -1,0 +1,24 @@
+[project]
+name = "etna-runner"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "sortedcontainers",
+  "hypothesis>=6.115",
+  "hypothesis-crosshair>=0.0.20",
+  "crosshair-tool>=0.0.79",
+  "pytest>=8",
+]
+
+[project.scripts]
+etna-runner = "etna_runner.runner:main"
+
+[tool.uv.sources]
+sortedcontainers = { path = "..", editable = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["etna_runner"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
