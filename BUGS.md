@@ -26,13 +26,13 @@ Total mutations: 5
 
 ## Framework Coverage
 
-| Property | proptest | quickcheck | crabcheck | hegel |
-|----------|---------:|-----------:|----------:|------:|
-| `FromkeysUsesCls` | ✓ | ✓ | ✓ | ✓ |
-| `IorPreservesIdentity` | ✓ | ✓ | ✓ | ✓ |
-| `CopyDoesNotAliasDict` | ✓ | ✓ | ✓ | ✓ |
-| `CopyDoesNotAliasSet` | ✓ | ✓ | ✓ | ✓ |
-| `UpdateMatchesAdd` | ✓ | ✓ | ✓ | ✓ |
+| Property | hypothesis | crosshair |
+|----------|---------:|--------:|
+| `FromkeysUsesCls` | ✓ | ✓ |
+| `IorPreservesIdentity` | ✓ | ✓ |
+| `CopyDoesNotAliasDict` | ✓ | ✓ |
+| `CopyDoesNotAliasSet` | ✓ | ✓ |
+| `UpdateMatchesAdd` | ✓ | ✓ |
 
 ## Bug Details
 
